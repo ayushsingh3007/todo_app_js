@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="./mediaquery.css">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title></title>
+</head>
+<body>
+	<div id="main_container">
+	<div id="blur">	<h2 id="tasklist">TASK LISTS</h2>
+		<h3 id="noitem">No item in todo list</h3>
+
+		<a  onclick="popupcomes()" id="addtask"><span id="plussign">+</span> <span>Add Task</span></a>
+
+
+
+	</div>
+		
+<div id="flex_container">
+		<div id="popupbox" class="pophide hide">
+				       	<h3 class="popup_heading">Add New item</h3>
+				       	<div class="input"><input type="text" name="" id="input"></div> 
+				                   <span class="buttons">
+				                   	<button onclick="closebutton()" class="close">x close</button>
+				                  <button  class="add" onclick="addbutton()">Add</button>
+				                               </span></div>
+             
+
+<div id="popupbox2" class="pophide hide">
+				       	<h3 class="popup2_heading">Add New item</h3>
+				       	<div class="input2_div"><input type="text" name="" id="input-2"></div> 
+				                   <span class="buttons">
+				                   	<button  class="close">x close</button>
+				                  <button   class="add" id="button_2">Add</button>
+				                               </span></div>
+             
+
+
+                    
+
+	</div>
+
+
+	</div>
+	
+
+
+
+
+
+
+<script src="./script.js"></script>
+</body>
+</html>
+

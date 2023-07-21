@@ -1,8 +1,10 @@
 
+
 // popup show and hide codes
 let blurpage=document.getElementById("blur")
 let addpopup=document.getElementById("popupbox")
-let popvisible=false;
+var tasklist=document.getElementById("tasklist")
+var popvisible=false;
 
 function popupcomes(){
 	
@@ -18,6 +20,32 @@ else{addpopup.classList.add("hide")
 
      }
 }
+
+
+
+// functionality for close button in popup1
+  
+function closebutton(){
+
+	if(popvisible){
+		blurpage.style.filter="none"
+		blurpage.style.filter="blur(0px)"
+	addpopup.classList.remove("hide")
+    popvisible=false
+}
+
+else{addpopup.classList.add("hide")
+    popvisible=true
+
+     }
+
+}
+
+
+
+
+
+
 
 
 // add button functionality is here
@@ -49,7 +77,7 @@ function addbutton(){
 let newdiv=document.createElement("div")
 let title=document.createElement("h3")
 let hrline=document.createElement("hr")
- let text=document.createElement("div")
+ var text=document.createElement("div")
 
   let addbutton=document.createElement("button")
  let deletebutton=document.createElement("button")
@@ -67,11 +95,11 @@ else{addpopup.classList.add("hide")
 
 
 
-// parent.appendChild(parent1)
+
 parent1.appendChild(newdiv)
 newdiv.appendChild(title)
 newdiv.appendChild(hrline)
-newdiv.setAttribute("id",Card_id)
+// newdiv.setAttribute("id",Card_id)
 newdiv.appendChild(text)
 text.appendChild(deletebutton)
 text.appendChild(addbutton)
@@ -80,8 +108,8 @@ text.appendChild(addbutton)
 newdiv.classList.add("flex_item")
 Noitem.style.display="none"
 title.innerText=inputvalue.value;
-title.style.paddingLeft="12%"
-title.style.color="red"
+title.style.paddingLeft="17%"
+title.style.color="#000066"
 	blurpage.style.filter="blur(0px)"
 	addbutton.innerText='+'
 	deletebutton.innerText="x"
@@ -104,15 +132,16 @@ else{popupbox2.classList.add("hide")
 
      }
 
-let para++
+
 let button_2 = document.getElementById("button_2");
   button_2.addEventListener("click", function () {
-    let newListItem = document.createElement("div");
+    
     let newListItemText = document.createElement("h4");
-    newListItem.appendChild(newListItemText);
-    newListItemText.setAttribute("id",para)
-    newListItemText.innerText = input2.value.trim();
-    newdiv.appendChild(newListItem);
+    text.appendChild(newListItemText);
+    newListItemText.classList.add("itemlists")
+    
+    newListItemText.innerText = input2.value
+    
     popupbox2.classList.add("hide");
     popup2 = true;
   });
@@ -120,47 +149,7 @@ let button_2 = document.getElementById("button_2");
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 })
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 	deletebutton.addEventListener('click',function(){

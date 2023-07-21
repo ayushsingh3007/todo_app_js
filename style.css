@@ -212,12 +212,10 @@ border:none;
     left: 14%;}
 
 
-  .itemlists::after {
+  .itemlists::after{
     content:"marked"
     color:pink;
   }
 
 
    
-
-

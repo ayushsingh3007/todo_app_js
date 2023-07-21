@@ -1,5 +1,4 @@
 
-
 // popup show and hide codes
 let blurpage=document.getElementById("blur")
 let addpopup=document.getElementById("popupbox")
@@ -70,7 +69,7 @@ let popupbox2=document.getElementById("popupbox2")
 
 
 
-
+// pop add button for adding card and
 function addbutton(){
 
 	Card_id++
@@ -78,7 +77,8 @@ let newdiv=document.createElement("div")
 let title=document.createElement("h3")
 let hrline=document.createElement("hr")
  var text=document.createElement("div")
-
+ let newListItemText = document.createElement("h4");
+   
   let addbutton=document.createElement("button")
  let deletebutton=document.createElement("button")
 
@@ -101,6 +101,8 @@ newdiv.appendChild(title)
 newdiv.appendChild(hrline)
 // newdiv.setAttribute("id",Card_id)
 newdiv.appendChild(text)
+ text.appendChild(newListItemText);
+
 text.appendChild(deletebutton)
 text.appendChild(addbutton)
 
@@ -139,6 +141,7 @@ let button_2 = document.getElementById("button_2");
     let newListItemText = document.createElement("h4");
     text.appendChild(newListItemText);
     newListItemText.classList.add("itemlists")
+   
     
     newListItemText.innerText = input2.value
     

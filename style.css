@@ -44,7 +44,7 @@
       	                       #popupbox{width: 26vw;
                              height:15vh;
                            
-                            
+                            background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
                              position: fixed;
                              top:40%;
                              left: 36%;
@@ -56,9 +56,11 @@
 
 
                         .popup_heading{margin-left:25%;
-                          color: red;} 
+                          color: #000066;
+                        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;} 
                           .input{margin-left: 18%;
                             margin-top:3%;
+                            text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
                           } 
                          
                         .close{margin-top: 8%;
@@ -66,8 +68,10 @@
                            width:6vw;
                           border:1px solid red;
                             border-radius: 10px;
-                            background-color: red;
-                            font-weight: bold;} 
+                            /*background-color: red;*/
+                            font-weight: bold;
+
+                          } 
                              .add{margin-top: 8%;
                             margin-left: 15%;
                             width:6vw;
@@ -78,19 +82,22 @@
                         }
                          #popupbox2{width: 26vw;
                              height:15vh;
-                           
+                            background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
                             
                              position: fixed;
                              top:40%;
                              left: 36%;
                              z-index: 1;
-                             background-color: green;
+                             background-color: #42f5da;
                            
                              border: 1px solid white;} 
-                             .popup2_heading{margin-left:25%;
-                          color: red;} 
+                          .popup2_heading{margin-left:25%;
+                          color: #000066;
+                          text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                        } 
                           #input-2{margin-left: 18%;
                             margin-top:3%;
+
                           } 
                           .close{margin-top: 8%;
                             margin-left: 20%;
@@ -98,7 +105,8 @@
                           border:1px solid red;
                             border-radius: 10px;
                             background-color: red;
-                            font-weight: bold;} 
+                            font-weight: bold;}
+                          
                              .add{margin-top: 8%;
                             margin-left: 15%;
                             width:6vw;
@@ -131,54 +139,66 @@
 
                         #flex_container{display: flex;
                                        flex-wrap: wrap;
-                                       justify-content: space-evenly;
+                                       justify-content: space-between;
+                                       margin-right: 2%;
+                                       margin-left: 2%;
                                        margin-top: 8%;
                                        }
                                        .flex_item{width: 20vw;
                                             min-height: 30vh;
                                             border:1px solid black;
-                                            background-color: skyblue;
+                                            background-color: #f56c42;
                                             margin-top: 2%;
                                              border-radius: 10px;
                                              box-shadow:8px 10px 6px  white;
                                              box-sizing: border-box;
-                                             position: relative;} 
+                                             position: relative;
+                                            background-image: linear-gradient(to top,#33ccff,#ff99cc)} 
 
 
-                                             .enjoy{
-                                                     width: 2vw;
-                                                     height: 4vh;
-                                                     box-sizing: border-box;
-                                                     font-weight: bolder;
-                                                     background-color: white;
-                                                     color: red;
-                                                     font-size: large;
-                                                     display: flex;
-                                                     align-content: center;
-                                                     align-items: center;
-                                                     justify-content: center;
-                                                      font-weight: bolder;
+                                             
 
 
-                                                     position: absolute;
-                                                     top:23vh;
-                                                     left: 14vw;
-                                                     } 
-                                                     .delete{width: 2vw;
-                                                           height: 4vh;
-                                                            
-                                                             position: absolute;
-                                                     top:23vh;
-                                                     left: 17vw;
-                                                     /* align-content: center;*/
-                                                     align-items: center;
-                                                     justify-content: center;
-                                                      font-weight: bolder;
-                                                     background-color: white;
-                                                     color: red;
-                                                     font-size: large;
-                                                     box-sizing: border-box;
-                                                            /*background-image: url(./delete.png);*/}       
+.enjoy {width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-weight: bolder;
+  background-color: white;
+  color: black;
+  border:none;
+  font-size: x-large;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  background-image: radial-gradient(circle, red, yellow, green);
+  position: absolute;
+  bottom: 0;
+  right: 16%;
+}
+
+.delete {
+  width:25px;
+  height: 25px;
+  border-radius: 50%;
+  background-image: radial-gradient(circle, red, yellow, green);
+
+  position: absolute;
+  bottom: 0;
+  right: 1%;
+border:none;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  background-color: white;
+  color:black;
+  font-size: large;
+  box-sizing: border-box;
+  
+
+}
 .list {
       margin: 5px 0;
     }
@@ -186,7 +206,18 @@
       text-decoration: line-through;
       color: gray;
     }
+    .itemlists{color:#000000;
+     
+    position: absolute;
+    left: 14%;}
 
+
+  .itemlists::after {
+    content:"marked"
+    color:pink;
+  }
 
 
    
+
+

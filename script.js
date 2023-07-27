@@ -1,65 +1,47 @@
-// popup show and hide codes
+// Popup show and hide codes
 let blurpage = document.getElementById("blur");
 let addpopup = document.getElementById("popupbox");
 let tasklist = document.getElementById("tasklist");
 let popvisible = false;
 
 function popupcomes() {
-  if (popvisible) {
+  if (!popvisible) {
     blurpage.style.filter = "blur(4px)";
     addpopup.classList.remove("hide");
-    popvisible = false;
-    Noitem.style.display = "none";
+    popvisible = true;
   } else {
     addpopup.classList.add("hide");
-    popvisible = true;
+    popvisible = false;
   }
 }
 
-// functionality for close button in popup1
 function closebutton() {
-  if (popvisible) {
-    blurpage.style.filter = "none";
-    blurpage.style.filter = "blur(0px)";
-    addpopup.classList.remove("hide");
-    popvisible = false;
-  } else {
-    addpopup.classList.add("hide");
-    popvisible = true;
-  }
+  blurpage.style.filter = "none";
+  addpopup.classList.add("hide");
+  popupbox2.classList.add("hide");
+  popvisible = false;
 }
 
-// add button functionality is here
+// Add button functionality
 let Noitem = document.getElementById("noitem");
-let parent = document.getElementById("main_container");
-let parent1 = document.getElementById("flex_container");
-let inputvalue = document.getElementById("input");
-let input2 = document.getElementById("input-2");
+let parent = document.getElementById("flex_container");
 let Card_id = 0;
-let popupbox2 = document.getElementById("popupbox2");
 
-// pop add button for adding card
 function addbutton() {
+  let inputvalue = document.getElementById("input").value;
+  if (inputvalue.trim() === "") {
+    return; // Do not add empty tasks
+  }
+
   Card_id++;
   let newdiv = document.createElement("div");
   let title = document.createElement("h3");
   let hrline = document.createElement("hr");
   let text = document.createElement("div");
   let newListItemText = document.createElement("h4");
-
   let addbutton = document.createElement("button");
   let deletebutton = document.createElement("button");
 
-  if (popvisible) {
-    blurpage.style.filter = "blur(4px)";
-    addpopup.classList.remove("hide");
-    popvisible = false;
-  } else {
-    addpopup.classList.add("hide");
-    popvisible = true;
-  }
-
-  parent1.appendChild(newdiv);
   newdiv.appendChild(title);
   newdiv.appendChild(hrline);
   newdiv.appendChild(text);
@@ -69,7 +51,7 @@ function addbutton() {
 
   newdiv.classList.add("flex_item");
   Noitem.style.display = "none";
-  title.innerText = inputvalue.value;
+  title.innerText = inputvalue;
   title.style.paddingLeft = "17%";
   title.style.color = "#000066";
   blurpage.style.filter = "blur(0px)";
@@ -78,42 +60,56 @@ function addbutton() {
   deletebutton.classList.add("delete");
   addbutton.classList.add("enjoy");
 
+  // Popup functionality for adding sub-tasks
   let popup2 = false;
-  addbutton.addEventListener("click", function() {
-    if (popup2) {
+  addbutton.addEventListener("click", function () {
+    if (!popup2) {
       popupbox2.classList.remove("hide");
-      popup2 = false;
-      Noitem.style.display = "none";
+      popup2 = true;
+
+      // Store a reference to the current task's div
+      currentTaskDiv = newdiv;
     } else {
       popupbox2.classList.add("hide");
-      popup2 = true;
+      popup2 = false;
     }
   });
 
   let button_2 = document.getElementById("button_2");
-  button_2.addEventListener("click", function() {
-    
+  button_2.addEventListener("click", function () {
+    let input2 = document.getElementById("input-2");
     let newListItemText = document.createElement("h4");
-    text.appendChild(newListItemText);
+    currentTaskDiv.appendChild(newListItemText); // Append to the current task's div
+
     newListItemText.classList.add("itemlists");
     newListItemText.innerText = input2.value;
     popupbox2.classList.add("hide");
-    input2.value=""
-    popup2 = true;
+    input2.value = "";
+    popup2 = false;
   });
 
+  parent.appendChild(newdiv);
+  document.getElementById("input").value = ""; // Clear the input after adding the task
+  addpopup.classList.add("hide");
+  popvisible = false;
 
 
 
 
 
-
-
-  deletebutton.addEventListener('click', function() {
-    newdiv.remove();
-  });
 }
 
-// close button functionality is there
-let taskListDivs = document.querySelector(".flex_item");
+let popup2comes=false;
+function closebutton2(){
+ if (!popup2comes) {
+   
+     popupbox2.classList.remove("hide");
+    popup2comes = true;
+  } else {
+     popupbox2.classList.add("hide");
+     popup2comes= false;
+  }
 
+
+
+}

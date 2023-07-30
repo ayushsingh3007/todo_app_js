@@ -32,31 +32,24 @@
   let Card_id = 0;
   let centeredDiv = null; // Store a reference to the centered div
 
-  function addbutton() {
+  
+
+
+
+function addbutton() {
     let inputvalue = document.getElementById("input").value;
     if (inputvalue.trim() === "") {
       return; // Do not add empty tasks
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-    Card_id++;
+Card_id++;
     let newdiv = document.createElement("div");
     let title = document.createElement("h3");
     let hrline = document.createElement("hr");
     let text = document.createElement("div");
     let newListItemText = document.createElement("h4");
-   
+    let donebutton=document.createElement("button")
+    
     let addbutton = document.createElement("button");
     let deletebutton = document.createElement("button");
 
@@ -66,19 +59,18 @@
     text.appendChild(newListItemText);
     text.appendChild(deletebutton);
     text.appendChild(addbutton);
-
-
+    
     newdiv.classList.add("flex_item");
     Noitem.style.display = "none";
     title.innerText = inputvalue;
-    title.style.paddingLeft = "17%";
+    title.style.paddingLeft = "14%";
     title.style.color = "#000066";
     blurpage.style.filter = "blur(0px)";
     addbutton.innerText = "+";
     deletebutton.innerText = "x";
     deletebutton.classList.add("delete");
     addbutton.classList.add("enjoy");
-
+    
 
     newListItemText.originalText = inputvalue; 
     newListItemText.done = false; 
@@ -101,16 +93,9 @@
 
 
 
- 
 
 
-
-
-
-
-
-    // Popup functionality for adding sub-tasks
-    let popup2 = false;
+ let popup2 = false;
     addbutton.addEventListener("click", function () {
       if (!popup2) {
         popupbox2.classList.remove("hide");
@@ -127,10 +112,18 @@
     let button_2 = document.getElementById("button_2");
     button_2.addEventListener("click", function () {
       let input2 = document.getElementById("input-2");
+       let donebutton=document.createElement("button")
       let newListItemText = document.createElement("h4");
+     
+      donebutton.innerText="done"
+      donebutton.classList.add("done")
+      donebutton.style.marginLeft="50%"
+      donebutton.style.marginTop="0%"
+
       newListItemText.style.paddingLeft = "15%";
-      newListItemText.style.paddingTop = "3%";
-      currentTaskDiv.appendChild(newListItemText); // Append to the current task's div
+      newListItemText.style.marginTop = "4%";
+      currentTaskDiv.appendChild(newListItemText); 
+      currentTaskDiv.appendChild(donebutton)// Append to the current task's div
 
       newListItemText.classList.add("itemlists");
       newListItemText.innerText = input2.value;
@@ -139,18 +132,11 @@
       popup2 = false;
     });
 
-        
+     
 
 
 
-
-
-
-
-
-
-
-    parent.appendChild(newdiv);
+parent.appendChild(newdiv);
     document.getElementById("input").value = ""; // Clear the input after adding the task
     addpopup.classList.add("hide");
     popvisible = false;
@@ -159,6 +145,16 @@
       newdiv.style.display = "none";
     });
   }
+
+  
+
+
+
+
+
+
+
+
 
   let popup2comes = false;
   function closebutton2() {
@@ -172,6 +168,7 @@
   }
 
   // Function to hide all divs except the clicked
+  const inputtitle = document.getElementById("input");
   const assigntitle = document.getElementById("title_assign");
   const tasks = document.getElementById("tasklist");
   function hideOtherDivs(clickedDiv) {
@@ -185,19 +182,17 @@
           div.style.display = "block";
           div.classList.remove("hide_container");
           centeredDiv = null;
-          assigntitle.innerText=input.value
+          tasks.innerText=inputtitle.value;
         } else {
           // If it's not already centered, center it and hide others
           div.style.display = "block";
           div.classList.add("hide_container");
           centeredDiv = div;
+
         }
       }
     });
-    tasks.classList.add("hide");
-    title_assign.innerText = input.value;
-    title_assign.classList.add("show");
-    title_assign.style.color = "white";
+
 
     backbutton.classList.remove("hide");
   }

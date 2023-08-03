@@ -128,7 +128,9 @@
                         .show{display: block;} 
 
 
-
+.linethrough{text-decoration: line-through;
+                color:red;}
+  
 
 
 

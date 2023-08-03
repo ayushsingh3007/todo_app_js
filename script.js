@@ -63,7 +63,7 @@ Card_id++;
     newdiv.classList.add("flex_item");
     Noitem.style.display = "none";
     title.innerText = inputvalue;
-    title.style.paddingLeft = "14%";
+    title.style.paddingLeft = "18%";
     title.style.color = "#000066";
     blurpage.style.filter = "blur(0px)";
     addbutton.innerText = "+";
@@ -94,7 +94,9 @@ Card_id++;
 
 
 
+  // ... (previous code)
 
+  
  let popup2 = false;
     addbutton.addEventListener("click", function () {
       if (!popup2) {
@@ -117,10 +119,18 @@ Card_id++;
      
       donebutton.innerText="done"
       donebutton.classList.add("done")
-      donebutton.style.marginLeft="50%"
+      donebutton.style.marginLeft="36%"
       donebutton.style.marginTop="0%"
+      donebutton.addEventListener("click",function(){
+        newListItemText. classList.add("linethrough")
+        donebutton.classList.add("hide")
+      })
 
-      newListItemText.style.paddingLeft = "15%";
+
+
+
+
+      newListItemText.style.paddingLeft = "35%";
       newListItemText.style.marginTop = "4%";
       currentTaskDiv.appendChild(newListItemText); 
       currentTaskDiv.appendChild(donebutton)// Append to the current task's div
@@ -130,7 +140,21 @@ Card_id++;
       popupbox2.classList.add("hide");
       input2.value = "";
       popup2 = false;
+
+
+
+
     });
+
+
+   
+
+
+
+
+
+
+
 
      
 
@@ -156,6 +180,31 @@ parent.appendChild(newdiv);
 
 
 
+function showAllDivs() {
+
+  const allDivs = Array.from(document.getElementsByClassName("flex_item"));
+  allDivs.forEach((div) => {
+    div.style.display = "block";
+    div.classList.remove("hide_container");
+  });
+  tasks.classList.remove("hide");
+  backbutton.classList.add("hide");
+  centeredDiv = null;
+
+  // Show the newly added task
+  const newTaskDiv = document.querySelector(".flex_item:last-child");
+  if (newTaskDiv) {
+    hideOtherDivs(newTaskDiv);
+  }
+}
+
+
+
+
+
+
+
+
   let popup2comes = false;
   function closebutton2() {
     if (!popup2comes) {
@@ -168,13 +217,17 @@ parent.appendChild(newdiv);
   }
 
   // Function to hide all divs except the clicked
-  const inputtitle = document.getElementById("input");
-  const assigntitle = document.getElementById("title_assign");
+ 
   const tasks = document.getElementById("tasklist");
+  
+
+
   function hideOtherDivs(clickedDiv) {
+     const inputtitle = document.getElementById("input");
     const allDivs = Array.from(document.getElementsByClassName("flex_item"));
     allDivs.forEach((div) => {
       if (div !== clickedDiv) {
+        tasks.innerText=inputtitle.value;
         div.style.display = "none";
       } else {
         if (div.classList.contains("hide_container")) {
@@ -182,7 +235,7 @@ parent.appendChild(newdiv);
           div.style.display = "block";
           div.classList.remove("hide_container");
           centeredDiv = null;
-          tasks.innerText=inputtitle.value;
+          
         } else {
           // If it's not already centered, center it and hide others
           div.style.display = "block";
@@ -193,7 +246,7 @@ parent.appendChild(newdiv);
       }
     });
 
-
+ tasks.classList.add("hide");
     backbutton.classList.remove("hide");
   }
 

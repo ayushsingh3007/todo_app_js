@@ -1,3 +1,5 @@
+
+// Popup show and hide codes
 let blurpage = document.getElementById("blur");
 let addpopup = document.getElementById("popupbox");
 let popupbox2 = document.getElementById("popupbox2");
@@ -167,9 +169,10 @@ function hideOtherDivs(clickedDiv) {
   if (hiddenCards.length > 0) {
     tasks.classList.add("hide");
     backbutton.classList.remove("hide");
+    tasks.innerContent=input.value
   } else {
-    tasks.classList.remove("hide");
-    backbutton.classList.add("hide");
+    tasks.classList.add("hide");
+    backbutton.classList.remove("hide");
   }
 }
 
@@ -184,5 +187,5 @@ function showAllDivs() {
 }
 
 function reverse() {
-  showAllDivs()
-}
+  showAllDivs();
+}  

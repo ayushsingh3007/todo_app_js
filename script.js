@@ -1,4 +1,3 @@
-
 // Popup show and hide codes
 let blurpage = document.getElementById("blur");
 let addpopup = document.getElementById("popupbox");
@@ -28,8 +27,10 @@ function closebutton() {
 
 let Noitem = document.getElementById("noitem");
 const parent = document.getElementById("flex_container");
+const hide_container = document.getElementById("hide_container");
 let Card_id = 0;
 let centeredDiv = null;
+let currentTaskDiv = null; // Added to track the currently centered task div
 
 function addbutton() {
   let inputvalue = document.getElementById("input").value;
@@ -70,7 +71,6 @@ function addbutton() {
   newListItemText.done = false;
 
   const input = document.getElementById("input");
-  const hide_container = document.getElementById("hide_container");
 
   title.addEventListener("click", function () {
     if (centeredDiv !== newdiv) {
@@ -124,12 +124,23 @@ function addbutton() {
     popup2 = false;
   }
 
-  parent.appendChild(newdiv);
+  if (centeredDiv) {
+    // If there is a centered div, add the new card below it in the hidden container
+    hide_container.appendChild(newdiv);
+  } else {
+    // Otherwise, add the new card to the regular parent container
+    parent.appendChild(newdiv);
+  }
+
   document.getElementById("input").value = "";
   addpopup.classList.add("hide");
   popvisible = false;
 
   deletebutton.addEventListener("click", function () {
+    if (centeredDiv === newdiv) {
+      centeredDiv = null;
+      hideOtherDivs(null);
+    }
     parent.removeChild(newdiv);
   });
 }
@@ -169,7 +180,6 @@ function hideOtherDivs(clickedDiv) {
   if (hiddenCards.length > 0) {
     tasks.classList.add("hide");
     backbutton.classList.remove("hide");
-    tasks.innerContent=input.value
   } else {
     tasks.classList.add("hide");
     backbutton.classList.remove("hide");
@@ -188,4 +198,15 @@ function showAllDivs() {
 
 function reverse() {
   showAllDivs();
-}  
+  const hiddenContainers = Array.from(document.getElementsByClassName("hide_container"));
+  hiddenContainers.forEach((container) => {
+    container.style.display = "block";
+    container.style.flexDirection="column"
+  });
+
+  if (currentTaskDiv) {
+    centeredDiv = currentTaskDiv;
+  } else {
+    centeredDiv = null;
+  }
+}

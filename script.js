@@ -189,10 +189,11 @@ function showAllDivs() {
     div.classList.remove("hide_container");
   });
   tasks.classList.remove("hide");
-  backbutton.classList.remove("hide");
+  backbutton.classList.add("hide");
 }
 
 function reverse() {
+
   showAllDivs();
   const hiddenContainers = Array.from(document.getElementsByClassName("hide_container"));
   hiddenContainers.forEach((container) => {

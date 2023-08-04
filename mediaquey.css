@@ -51,12 +51,12 @@
                                #popupbox{width: 68vw;
                              height:15vh;
                            
-                            background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+                            
                              position: fixed;
                              top:37%;
                              left: 14%;
                              z-index: 1;
-                             background-color: white;
+                             background-color: #4a5250;
                            
                              border: 1px solid white;}
 
@@ -77,7 +77,7 @@
                            height:3vh;
                           border:1px solid red;
                             border-radius: 10px;
-                            background-color: red;
+                            background-color: blue;
                            font-size: x-small;
 
                           } 
@@ -87,18 +87,18 @@
                             height: 3vh;
                             border:1px solid red;
                             border-radius: 10px;
-                            background-color: red;
+                            background-color: blue;
                             font-size:x-small;
                         }
                          #popupbox2{width: 66vw;
                              height:15vh;
-                            background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+                           
                             
                              position: fixed;
                              top:40%;
                              left: 17%;
                              z-index: 1;
-                             background-color: #42f5da;
+                             background-color: #4a5250;
                            
                              border: 1px solid white;} 
                           .popup2_heading{margin-left:22%;
@@ -160,7 +160,7 @@
                                        .flex_item{width: 63vw;
                                             min-height: 30vh;
                                             border:1px solid black;
-                                            background-color: #f56c42;
+                                            background-color: #f58442;
                                             margin-top: 10%;
                                             
 
@@ -168,7 +168,7 @@
                                              box-shadow:8px 10px 6px  white;
                                              box-sizing: border-box;
                                              
-                                            background-image: linear-gradient(to top,#33ccff,#ff99cc)} 
+                                            /*background-image: linear-gradient(to top,#33ccff,#ff99cc)*/} 
 
 
           .hide_container{/*display: flex;
@@ -195,7 +195,7 @@
   align-items: center;
   justify-content: center;
   font-weight: bolder;
-  background-image: radial-gradient(circle, red, yellow, green);
+ /* background-image: radial-gradient(circle, red, yellow, green);*/
   position: absolute;
   bottom: 0;
   right: 16%;
@@ -205,8 +205,8 @@
   width:25px;
   height: 25px;
   border-radius: 50%;
-  background-image: radial-gradient(circle, red, yellow, green);
-
+  /*background-image: radial-gradient(circle, red, yellow, green);
+*/
   position: absolute;
   bottom: 0;
   right: 1%;
@@ -304,12 +304,12 @@ border:none;
                                #popupbox{width: 68vw;
                              height:15vh;
                            
-                            background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+                           
                              position: fixed;
                              top:37%;
                              left: 14%;
                              z-index: 1;
-                             background-color: white;
+                             background-color: #4a5250;
                            
                              border: 1px solid white;}
 
@@ -345,13 +345,12 @@ border:none;
                         }
                          #popupbox2{width: 66vw;
                              height:15vh;
-                            background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
                             
                              position: fixed;
                              top:40%;
                              left: 17%;
                              z-index: 1;
-                             background-color: #42f5da;
+                             background-color: #4a5250;
                            
                              border: 1px solid white;} 
                           .popup2_heading{margin-left:22%;
@@ -413,7 +412,7 @@ border:none;
                                        .flex_item{width: 63vw;
                                             min-height: 30vh;
                                             border:1px solid black;
-                                            background-color: #f56c42;
+                                            background-color: #f58442;
                                             margin-top: 10%;
                                             
 
@@ -421,7 +420,7 @@ border:none;
                                              box-shadow:8px 10px 6px  white;
                                              box-sizing: border-box;
                                              
-                                            background-image: linear-gradient(to top,#33ccff,#ff99cc)} 
+                                            /*background-image: linear-gradient(to top,#33ccff,#ff99cc)*/} 
 
 
           .hide_container{/*display: flex;
@@ -448,7 +447,7 @@ border:none;
   align-items: center;
   justify-content: center;
   font-weight: bolder;
-  background-image: radial-gradient(circle, red, yellow, green);
+/*  background-image: radial-gradient(circle, red, yellow, green);*/
   position: absolute;
   bottom: 0;
   right: 16%;
@@ -458,8 +457,8 @@ border:none;
   width:25px;
   height: 25px;
   border-radius: 50%;
-  background-image: radial-gradient(circle, red, yellow, green);
-
+  /*background-image: radial-gradient(circle, red, yellow, green);
+*/
   position: absolute;
   bottom: 0;
   right: 1%;
@@ -557,12 +556,12 @@ border:none;
                                #popupbox{width: 45vw;
                              height:15vh;
                            
-                            background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+                            
                              position: fixed;
                              top:37%;
                              left: 25%;
                              z-index: 1;
-                             background-color: white;
+                             background-color:#4a5250;
                            
                              border: 1px solid white;}
 
@@ -598,13 +597,13 @@ border:none;
                         }
                          #popupbox2{width: 45vw;
                              height:15vh;
-                            background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+                           
                             
                              position: fixed;
                              top:40%;
                              left: 25%;
                              z-index: 1;
-                             background-color: #42f5da;
+                             background-color: #4a5250;
                            
                              border: 1px solid white;} 
                           .popup2_heading{margin-left:22%;
@@ -666,7 +665,7 @@ border:none;
                                        .flex_item{width: 63vw;
                                             min-height: 30vh;
                                             border:1px solid black;
-                                            background-color: #f56c42;
+                                            background-color: #f58442;
                                             margin-top: 10%;
                                             
 
@@ -674,7 +673,7 @@ border:none;
                                              box-shadow:8px 10px 6px  white;
                                              box-sizing: border-box;
                                              
-                                            background-image: linear-gradient(to top,#33ccff,#ff99cc)} 
+                                            /*background-image: linear-gradient(to top,#33ccff,#ff99cc)*/} 
 
 
           .hide_container{/*display: flex;
@@ -701,7 +700,7 @@ border:none;
   align-items: center;
   justify-content: center;
   font-weight: bolder;
-  background-image: radial-gradient(circle, red, yellow, green);
+  /*background-image: radial-gradient(circle, red, yellow, green);*/
   position: absolute;
   bottom: 0;
   right: 16%;
@@ -711,7 +710,7 @@ border:none;
   width:25px;
   height: 25px;
   border-radius: 50%;
-  background-image: radial-gradient(circle, red, yellow, green);
+  /*ackground-image: radial-gradient(circle, red, yellow, green);*/
 
   position: absolute;
   bottom: 0;
@@ -813,12 +812,12 @@ border:none;
                                #popupbox{width: 45vw;
                              height:15vh;
                            
-                            background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+                            
                              position: fixed;
                              top:37%;
                              left: 25%;
                              z-index: 1;
-                             background-color: white;
+                             background-color: #4a5250;
                            
                              border: 1px solid white;}
 
@@ -856,13 +855,13 @@ border:none;
                         }
                          #popupbox2{width: 45vw;
                              height:15vh;
-                            background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+                           
                             
                              position: fixed;
                              top:40%;
                              left: 25%;
                              z-index: 1;
-                             background-color: #42f5da;
+                             background-color: #4a5250;
                            
                              border: 1px solid white;} 
                           .popup2_heading{margin-left:35%;
@@ -924,7 +923,7 @@ border:none;
                                        .flex_item{width: 40vw;
                                             min-height: 30vh;
                                             border:1px solid black;
-                                            background-color: #f56c42;
+                                            background-color: #f58442;
                                             margin-top: 10%;
                                             
 
@@ -932,7 +931,7 @@ border:none;
                                              box-shadow:8px 10px 6px  white;
                                              box-sizing: border-box;
                                              
-                                            background-image: linear-gradient(to top,#33ccff,#ff99cc)} 
+                                            /*background-image: linear-gradient(to top,#33ccff,#ff99cc)*/} 
 
 
           .hide_container{/*display: flex;
@@ -959,7 +958,7 @@ border:none;
   align-items: center;
   justify-content: center;
   font-weight: bolder;
-  background-image: radial-gradient(circle, red, yellow, green);
+  /*background-image: radial-gradient(circle, red, yellow, green);*/
   position: absolute;
   bottom: 0;
   right: 16%;
@@ -969,7 +968,7 @@ border:none;
   width:25px;
   height: 25px;
   border-radius: 50%;
-  background-image: radial-gradient(circle, red, yellow, green);
+ /* background-image: radial-gradient(circle, red, yellow, green);*/
 
   position: absolute;
   bottom: 0;
@@ -1062,13 +1061,12 @@ border:none;
                                font-size: x-large;}
                                #popupbox{width: 26vw;
                              height:15vh;
-                           
-                            background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
                              position: fixed;
+                           
                              top:40%;
                              left: 36%;
                              z-index: 1;
-                             background-color: white;
+                             background-color: #4a5250;
                            
                              border: 1px solid white;}   
 
@@ -1101,13 +1099,12 @@ border:none;
                         }
                          #popupbox2{width: 26vw;
                              height:15vh;
-                            background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
                             
                              position: fixed;
                              top:40%;
                              left: 36%;
                              z-index: 1;
-                             background-color: #42f5da;
+                             background-color: #4a5250;
                            
                              border: 1px solid white;} 
                           .popup2_heading{margin-left:25%;
@@ -1167,13 +1164,13 @@ border:none;
 .flex_item{width: 20vw;
            min-height: 30vh;
            border:1px solid black;
-          background-color: #f56c42;
+          background-color: #f58442;
           margin-top: 2%;
           border-radius: 10px;
          box-shadow:8px 10px 6px  white;
          box-sizing: border-box;
          position: relative;
-        background-image: linear-gradient(to top,#33ccff,#ff99cc)} 
+       /* background-image: linear-gradient(to top,#33ccff,#ff99cc)*/} 
 
 
           .hide_container{/*display: flex;
@@ -1200,7 +1197,7 @@ border:none;
   align-items: center;
   justify-content: center;
   font-weight: bolder;
-  background-image: radial-gradient(circle, red, yellow, green);
+  /*background-image: radial-gradient(circle, red, yellow, green);*/
   position: absolute;
   bottom: 0;
   right: 16%;
@@ -1210,7 +1207,7 @@ border:none;
   width:25px;
   height: 25px;
   border-radius: 50%;
-  background-image: radial-gradient(circle, red, yellow, green);
+ /* background-image: radial-gradient(circle, red, yellow, green);*/
 
   position: absolute;
   bottom: 0;
@@ -1302,12 +1299,12 @@ border:none;
                                #popupbox{width: 26vw;
                              height:20vh;
                            
-                            background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+                            
                              position: fixed;
                              top:40%;
                              left: 36%;
                              z-index: 1;
-                             background-color: white;
+                             background-color: #4a5250;
                            
                              border: 1px solid white;}   
 
@@ -1340,13 +1337,13 @@ border:none;
                         }
                          #popupbox2{width: 26vw;
                              height:20vh;
-                            background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+                            
                             
                              position: fixed;
                              top:40%;
                              left: 36%;
                              z-index: 1;
-                             background-color: #42f5da;
+                             background-color:#4a5250 ;
                            
                              border: 1px solid white;} 
                           .popup2_heading{margin-left:25%;
@@ -1406,13 +1403,13 @@ border:none;
 .flex_item{width: 20vw;
            min-height: 30vh;
            border:1px solid black;
-          background-color: #f56c42;
+          background-color: #f58442;
           margin-top: 2%;
           border-radius: 10px;
          box-shadow:8px 10px 6px  white;
          box-sizing: border-box;
          position: relative;
-        background-image: linear-gradient(to top,#33ccff,#ff99cc)} 
+       /* background-image: linear-gradient(to top,#33ccff,#ff99cc)*/} 
 
 
           .hide_container{/*display: flex;
@@ -1439,7 +1436,7 @@ border:none;
   align-items: center;
   justify-content: center;
   font-weight: bolder;
-  background-image: radial-gradient(circle, red, yellow, green);
+ /* background-image: radial-gradient(circle, red, yellow, green);*/
   position: absolute;
   bottom: 0;
   right: 16%;
@@ -1449,7 +1446,7 @@ border:none;
   width:25px;
   height: 25px;
   border-radius: 50%;
-  background-image: radial-gradient(circle, red, yellow, green);
+  /*background-image: radial-gradient(circle, red, yellow, green);*/
 
   position: absolute;
   bottom: 0;
@@ -1543,12 +1540,12 @@ border:none;
                                #popupbox{width: 26vw;
                              height:20vh;
                            
-                            background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+                            
                              position: fixed;
                              top:40%;
                              left: 36%;
                              z-index: 1;
-                             background-color: white;
+                             background-color: #4a5250;
                            
                              border: 1px solid white;}   
 
@@ -1562,7 +1559,7 @@ border:none;
                             text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
                           } 
                          
-                        .close{margin-top: 8%;
+                        .close{margin-top: 6%;
                             margin-left: 20%;
                            width:6vw;
                           border:1px solid red;
@@ -1571,7 +1568,7 @@ border:none;
                             font-weight: bold;
 
                           } 
-                             .add{margin-top: 8%;
+                             .add{margin-top: 6%;
                             margin-left: 15%;
                             width:6vw;
                             border:1px solid red;
@@ -1581,13 +1578,13 @@ border:none;
                         }
                          #popupbox2{width: 26vw;
                              height:20vh;
-                            background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+                            
                             
                              position: fixed;
                              top:40%;
                              left: 36%;
                              z-index: 1;
-                             background-color: #42f5da;
+                             background-color: #4a5250;
                            
                              border: 1px solid white;} 
                           .popup2_heading{margin-left:25%;
@@ -1598,7 +1595,7 @@ border:none;
                             margin-top:3%;
 
                           } 
-                          .close{margin-top: 8%;
+                          .close{margin-top: 6%;
                             margin-left: 20%;
                            width:6vw;
                           border:1px solid red;
@@ -1606,7 +1603,7 @@ border:none;
                             background-color: red;
                             font-weight: bold;}
                           
-                             .add{margin-top: 8%;
+                             .add{margin-top: 6%;
                             margin-left: 15%;
                             width:6vw;
                             border:1px solid red;
@@ -1647,13 +1644,13 @@ border:none;
 .flex_item{width: 20vw;
            min-height: 30vh;
            border:1px solid black;
-          background-color: #f56c42;
+          background-color: #f58442;
           margin-top: 2%;
           border-radius: 10px;
          box-shadow:8px 10px 6px  white;
          box-sizing: border-box;
          position: relative;
-        background-image: linear-gradient(to top,#33ccff,#ff99cc)} 
+       /* background-image: linear-gradient(to top,#33ccff,#ff99cc)*/} 
 
 
           .hide_container{/*display: flex;
@@ -1680,7 +1677,7 @@ border:none;
   align-items: center;
   justify-content: center;
   font-weight: bolder;
-  background-image: radial-gradient(circle, red, yellow, green);
+  /*background-image: radial-gradient(circle, red, yellow, green);*/
   position: absolute;
   bottom: 0;
   right: 16%;
@@ -1690,8 +1687,8 @@ border:none;
   width:25px;
   height: 25px;
   border-radius: 50%;
-  background-image: radial-gradient(circle, red, yellow, green);
-
+ /* background-image: radial-gradient(circle, red, yellow, green);
+*/
   position: absolute;
   bottom: 0;
   right: 1%;

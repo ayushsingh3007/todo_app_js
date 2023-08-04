@@ -175,7 +175,7 @@ function hideOtherDivs(clickedDiv) {
   const hiddenCards = allDivs.filter((div) => div.style.display === "none");
   if (hiddenCards.length > 0) {
     tasks.classList.add("hide");
-    backbutton.classList.add("hide");
+    backbutton.classList.remove("hide");
   } else {
     tasks.classList.add("hide");
     backbutton.classList.remove("hide");

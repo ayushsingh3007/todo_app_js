@@ -1,10 +1,14 @@
-// Popup show and hide codes
 let blurpage = document.getElementById("blur");
 let addpopup = document.getElementById("popupbox");
 let popupbox2 = document.getElementById("popupbox2");
-
-var backbutton = document.getElementById("back_button");
-backbutton.classList.add("hide");
+let backbutton = document.getElementById("back_button");
+let Noitem = document.getElementById("noitem");
+const parent = document.getElementById("flex_container");
+const hide_container = document.getElementById("hide_container");
+let Card_id = 0;
+let centeredDiv = null;
+let currentTaskDiv = null;
+backbutton.classList.add("hide")
 
 let popvisible = false;
 function popupcomes() {
@@ -25,17 +29,47 @@ function closebutton() {
   popvisible = false;
 }
 
-let Noitem = document.getElementById("noitem");
-const parent = document.getElementById("flex_container");
-const hide_container = document.getElementById("hide_container");
-let Card_id = 0;
-let centeredDiv = null;
-let currentTaskDiv = null; // Added to track the currently centered task div
+let popup2comes = false;
+function closebutton2() {
+  if (!popup2comes) {
+    popupbox2.classList.remove("hide");
+    popup2comes = true;
+  } else {
+    popupbox2.classList.add("hide");
+    popup2comes = false;
+  }
+}
+
+function handleAddButtonClick() {
+  let input2 = document.getElementById("input-2");
+  let donebutton = document.createElement("button");
+  let newListItemText = document.createElement("h4");
+
+  donebutton.innerText = "done";
+  donebutton.classList.add("done");
+  donebutton.style.marginLeft = "36%";
+  donebutton.style.marginTop = "0%";
+  donebutton.addEventListener("click", function () {
+    newListItemText.classList.add("linethrough");
+    donebutton.classList.add("hide");
+  });
+
+  newListItemText.style.paddingLeft = "35%";
+  newListItemText.style.marginTop = "4%";
+  currentTaskDiv.appendChild(newListItemText);
+  currentTaskDiv.appendChild(donebutton);
+
+  newListItemText.classList.add("itemlists");
+  newListItemText.innerText = input2.value;
+  popupbox2.classList.add("hide");
+  input2.value = "";
+  popup2comes = false;
+}
 
 function addbutton() {
   let inputvalue = document.getElementById("input").value;
   if (inputvalue.trim() === "") {
-    return; // Do not add empty tasks
+    return;
   }
 
   Card_id++;
@@ -89,7 +123,6 @@ function addbutton() {
       popup2 = true;
       currentTaskDiv = newdiv;
 
-      // Remove previous event listener before adding a new one
       button_2.removeEventListener("click", handleAddButtonClick);
       button_2.addEventListener("click", handleAddButtonClick);
     } else {
@@ -98,37 +131,9 @@ function addbutton() {
     }
   });
 
-  function handleAddButtonClick() {
-    let input2 = document.getElementById("input-2");
-    let donebutton = document.createElement("button");
-    let newListItemText = document.createElement("h4");
-
-    donebutton.innerText = "done";
-    donebutton.classList.add("done");
-    donebutton.style.marginLeft = "36%";
-    donebutton.style.marginTop = "0%";
-    donebutton.addEventListener("click", function () {
-      newListItemText.classList.add("linethrough");
-      donebutton.classList.add("hide");
-    });
-
-    newListItemText.style.paddingLeft = "35%";
-    newListItemText.style.marginTop = "4%";
-    currentTaskDiv.appendChild(newListItemText);
-    currentTaskDiv.appendChild(donebutton);
-
-    newListItemText.classList.add("itemlists");
-    newListItemText.innerText = input2.value;
-    popupbox2.classList.add("hide");
-    input2.value = "";
-    popup2 = false;
-  }
-
   if (centeredDiv) {
-    // If there is a centered div, add the new card below it in the hidden container
     hide_container.appendChild(newdiv);
   } else {
-    // Otherwise, add the new card to the regular parent container
     parent.appendChild(newdiv);
   }
 
@@ -145,17 +150,6 @@ function addbutton() {
   });
 }
 
-let popup2comes = false;
-function closebutton2() {
-  if (!popup2comes) {
-    popupbox2.classList.remove("hide");
-    popup2comes = true;
-  } else {
-    popupbox2.classList.add("hide");
-    popup2comes = false;
-  }
-}
-
 const tasks = document.getElementById("tasklist");
 
 function hideOtherDivs(clickedDiv) {
@@ -168,7 +162,9 @@ function hideOtherDivs(clickedDiv) {
         div.style.display = "block";
         div.classList.remove("hide_container");
         centeredDiv = null;
-      } else {
+      } 
+
+      else {
         div.style.display = "block";
         div.classList.add("hide_container");
         centeredDiv = div;
@@ -179,7 +175,7 @@ function hideOtherDivs(clickedDiv) {
   const hiddenCards = allDivs.filter((div) => div.style.display === "none");
   if (hiddenCards.length > 0) {
     tasks.classList.add("hide");
-    backbutton.classList.remove("hide");
+    backbutton.classList.add("hide");
   } else {
     tasks.classList.add("hide");
     backbutton.classList.remove("hide");
@@ -193,7 +189,7 @@ function showAllDivs() {
     div.classList.remove("hide_container");
   });
   tasks.classList.remove("hide");
-  backbutton.classList.add("hide");
+  backbutton.classList.remove("hide");
 }
 
 function reverse() {
@@ -201,7 +197,7 @@ function reverse() {
   const hiddenContainers = Array.from(document.getElementsByClassName("hide_container"));
   hiddenContainers.forEach((container) => {
     container.style.display = "block";
-    container.style.flexDirection="column"
+    container.style.flexDirection = "column";
   });
 
   if (currentTaskDiv) {
@@ -209,4 +205,12 @@ function reverse() {
   } else {
     centeredDiv = null;
   }
+
+  // Get all the cards in the hide_container
+  const hiddenCards = Array.from(document.getElementsByClassName("hide_container")[0].children);
+
+  // Append the hidden cards to the flex_container
+  hiddenCards.forEach((card) => {
+    parent.appendChild(card);
+  });
 }

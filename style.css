@@ -151,8 +151,9 @@
 .flex_item{min-width: 20vw;
            min-height: 30vh;
            border:1px solid black;
-          background-color: #E1F8DC;
-          background-image: url(./cartoon_img.jpg);
+          background-color: black;
+          color: white;
+          
           background-repeat: no-repeat;
           margin-top: 2%;
           border-radius: 10px;
@@ -217,7 +218,7 @@ border:none;
 }
 */
   .linethrough{text-decoration: line-through;
-                color:red;}
+                color:white;}
   
 
 

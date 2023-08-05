@@ -94,7 +94,7 @@ function addbutton() {
   Noitem.style.display = "none";
   title.innerText = inputvalue;
   title.style.paddingLeft = "18%";
-  title.style.color = "#000066";
+  title.style.color = "white";
   blurpage.style.filter = "blur(0px)";
   addbutton.innerText = "+";
   deletebutton.innerText = "x";

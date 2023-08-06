@@ -47,15 +47,16 @@ function handleAddButtonClick() {
 
   donebutton.innerText = "done";
   donebutton.classList.add("done");
-  donebutton.style.marginLeft = "36%";
+  donebutton.style.marginLeft = "40%";
   donebutton.style.marginTop = "0%";
   donebutton.addEventListener("click", function () {
     newListItemText.classList.add("linethrough");
     donebutton.classList.add("hide");
   });
 
-  newListItemText.style.paddingLeft = "35%";
+  newListItemText.style.textAlign = "center";
   newListItemText.style.marginTop = "4%";
+  newListItemText.style.fontStyle="italic"
   currentTaskDiv.appendChild(newListItemText);
   currentTaskDiv.appendChild(donebutton);
 
@@ -93,7 +94,8 @@ function addbutton() {
   newdiv.classList.add("flex_item");
   Noitem.style.display = "none";
   title.innerText = inputvalue;
-  title.style.paddingLeft = "18%";
+  title.style.textAlign = "center";
+
   title.style.color = "white";
   blurpage.style.filter = "blur(0px)";
   addbutton.innerText = "+";
@@ -167,6 +169,7 @@ function hideOtherDivs(clickedDiv) {
       else {
         div.style.display = "block";
         div.classList.add("hide_container");
+        
         centeredDiv = div;
       }
     }

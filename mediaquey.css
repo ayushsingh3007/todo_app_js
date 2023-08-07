@@ -14,9 +14,7 @@
         height:100vh;
         border-top: 5px solid white;
         border-left: 5px solid white;
-     background-image: url(./lamborgini.jpg);
-        background-repeat: no-repeat;
-        background-size:cover;}
+     }
 
         #tasklist{color:white;
           position: absolute;
@@ -34,7 +32,7 @@
              #plussign{width:8vw;
                       height: 8vh;
                       border-radius:50%;
-                      background-color:red;
+                      background-color:blue;
                       font-weight:bolder;
                       font-size:large;
                       }
@@ -67,7 +65,7 @@
 
 
                         .popup_heading{margin-left:23%;
-                          color: #000066;
+                          color: #f57842;
                         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;} 
                           .input{margin-left: 4%;
                             margin-top:3%;
@@ -80,7 +78,7 @@
                            height:3vh;
                           border:1px solid red;
                             border-radius: 10px;
-                            background-color: orange;
+                            background-color: #f57842;
                            font-size: x-small;
 
                           } 
@@ -90,7 +88,7 @@
                             height: 3vh;
                             border:1px solid red;
                             border-radius: 10px;
-                            background-color: orange;
+                            background-color: #f57842;
                             font-size:x-small;
                         }
                          #popupbox2{width: 66vw;
@@ -105,7 +103,7 @@
                            
                              border: 1px solid white;} 
                           .popup2_heading{margin-left:22%;
-                          color: #000066;
+                          color: #f57842;
                           text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
                         } 
                           #input-2{margin-left: 3%;
@@ -163,7 +161,7 @@
                                        .flex_item{min-width: 63vw;
                                             min-height: 30vh;
                                             border:1px solid black;
-                                            background-color: #474747;
+                                            background-color: white;
                                             color:white;
                                             margin-top: 10%;
                                             
@@ -192,8 +190,8 @@
   border-radius: 50%;
   box-sizing: border-box;
   font-weight: bolder;
-  background-color: white;
-  color: black;
+  background-color: #f57842;
+  color: white;
   border:none;
   font-size: x-large;
   display: flex;
@@ -220,8 +218,8 @@ border:none;
   align-items: center;
   justify-content: center;
   font-weight: bolder;
-  background-color: white;
-  color:black;
+  background-color: blue;
+  color:white;
   font-size: large;
   box-sizing: border-box;
   
@@ -273,9 +271,7 @@ border:none;
         height:100vh;
         border-top: 5px solid white;
         border-left: 5px solid white;
-     background-image: url(./lamborgini.jpg);
-        background-repeat: no-repeat;
-        background-size:cover;}
+     }
 
         #tasklist{color:white;
           position: absolute;
@@ -293,7 +289,7 @@ border:none;
              #plussign{width:45px;
                       height: 45px;
                       border-radius:50%;
-                      background-color:red;
+                      background-color:blue;
                       font-weight:bolder;
                       font-size:xx-large;
                       }
@@ -326,7 +322,7 @@ border:none;
 
 
                         .popup_heading{margin-left:25%;
-                          color: #000066;
+                          color: #f57842;
                         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;} 
                           .input{margin-left: 17%;
                             margin-top:4%;
@@ -339,7 +335,7 @@ border:none;
                            height:3vh;
                           border:1px solid red;
                             border-radius: 10px;
-                            background-color: red;
+                            background-color: #f57842;
                            font-size: x-small;
 
                           } 
@@ -349,7 +345,7 @@ border:none;
                             height: 3vh;
                             border:1px solid red;
                             border-radius: 10px;
-                            background-color: red;
+                            background-color:#f57842;
                             font-size:x-small;
                         }
                          #popupbox2{width: 66vw;
@@ -363,7 +359,7 @@ border:none;
                            
                              border: 1px solid white;} 
                           .popup2_heading{margin-left:22%;
-                          color: #000066;
+                          color:#f57842;
                           text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
                         } 
                           #input-2{margin-left: 15%;
@@ -421,7 +417,7 @@ border:none;
                                        .flex_item{min-width: 63vw;
                                             min-height: 30vh;
                                             border:1px solid black;
-                                            background-color: #474747;
+                                            background-color:white;
                                             margin-top: 10%;
                                              border-radius: 10px;
                                              box-shadow:8px 10px 6px  white;
@@ -445,8 +441,8 @@ border:none;
   border-radius: 50%;
   box-sizing: border-box;
   font-weight: bolder;
-  background-color: white;
-  color: black;
+  background-color: #f57842;
+  color: white;
   border:none;
   font-size: x-large;
   display: flex;
@@ -473,8 +469,8 @@ border:none;
   align-items: center;
   justify-content: center;
   font-weight: bolder;
-  background-color: white;
-  color:black;
+  background-color: blue;
+  color:white;
   font-size: large;
   box-sizing: border-box;
   
@@ -526,9 +522,7 @@ border:none;
         height:100vh;
         border-top: 5px solid white;
         border-left: 5px solid white;
-     background-image: url(./lamborgini.jpg);
-        background-repeat: no-repeat;
-        background-size:cover;}
+    }
 
         #tasklist{color:white;
           position: absolute;
@@ -546,7 +540,7 @@ border:none;
              #plussign{width:8vw;
                       height: 8vh;
                       border-radius:50%;
-                      background-color:red;
+                      background-color:blue;
                       font-weight:bolder;
                       font-size:large;
                       }
@@ -579,7 +573,7 @@ border:none;
 
 
                         .popup_heading{margin-left:25%;
-                          color: #000066;
+                          color: #f57842;
                         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;} 
                           .input{margin-left: 17%;
                             margin-top:4%;
@@ -592,7 +586,7 @@ border:none;
                            height:3vh;
                           border:1px solid red;
                             border-radius: 10px;
-                            background-color: red;
+                            background-color: #f57842;
                            font-size: x-small;
 
                           } 
@@ -602,7 +596,7 @@ border:none;
                             height: 3vh;
                             border:1px solid red;
                             border-radius: 10px;
-                            background-color: red;
+                            background-color: #f57842;
                             font-size:x-small;
                         }
                          #popupbox2{width: 45vw;
@@ -617,7 +611,7 @@ border:none;
                            
                              border: 1px solid white;} 
                           .popup2_heading{margin-left:22%;
-                          color: #000066;
+                          color: #f57842;
                           text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
                         } 
                           #input-2{margin-left: 15%;
@@ -675,7 +669,7 @@ border:none;
                                        .flex_item{min-width: 63vw;
                                             min-height: 30vh;
                                             border:1px solid black;
-                                            background-color: #474747;
+                                            background-color: white;
                                             margin-top: 10%;
                                             
 
@@ -701,8 +695,8 @@ border:none;
   border-radius: 50%;
   box-sizing: border-box;
   font-weight: bolder;
-  background-color: white;
-  color: black;
+  background-color:#f57842;
+  color: white;
   border:none;
   font-size: x-large;
   display: flex;
@@ -729,8 +723,8 @@ border:none;
   align-items: center;
   justify-content: center;
   font-weight: bolder;
-  background-color: white;
-  color:black;
+  background-color: blue;
+  color:white;
   font-size: large;
   box-sizing: border-box;
   
@@ -785,10 +779,7 @@ border:none;
         height:100vh;
         border-top: 5px solid white;
         border-left: 5px solid white;
-     background-image: url(./lamborgini.jpg);
-        background-repeat: no-repeat;
-        background-size:cover;
-        box-sizing: border-box;}
+     }
 
         #tasklist{color:white;
           position: absolute;
@@ -806,7 +797,7 @@ border:none;
              #plussign{width:25px;
                       height: 25px;
                       border-radius:50%;
-                      background-color:red;
+                      background-color:blue;
                       font-weight:bolder;
                       font-size:larger;
                       }
@@ -840,7 +831,7 @@ border:none;
 
                         .popup_heading{margin-left:22%;
                         	margin-top: 2%;
-                          color: #000066;
+                          color:#f57842;
                           font-size: xx-large;
                         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;} 
                           .input{margin-left: 24%;
@@ -855,7 +846,7 @@ border:none;
                            height:3vh;
                           border:1px solid red;
                             border-radius: 10px;
-                            background-color: red;
+                            background-color: #f57842;
                            font-size:large;
 
                           } 
@@ -865,7 +856,7 @@ border:none;
                             height: 3vh;
                             border:1px solid red;
                             border-radius: 10px;
-                            background-color: red;
+                            background-color:#f57842;
                             font-size:large;
                         }
                          #popupbox2{width: 45vw;
@@ -880,7 +871,7 @@ border:none;
                            
                              border: 1px solid white;} 
                           .popup2_heading{margin-left:35%;
-                          color: #000066;
+                          color: #f57842;
                           text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
                         } 
                           #input-2{margin-left: 25%;
@@ -938,7 +929,7 @@ border:none;
                                        .flex_item{min-width: 40vw;
                                             min-height: 30vh;
                                             border:1px solid black;
-                                            background-color:#474747;
+                                            background-color:white;
                                             margin-top: 10%;
                                           
                                             color:white;
@@ -965,8 +956,8 @@ border:none;
   border-radius: 50%;
   box-sizing: border-box;
   font-weight: bolder;
-  background-color: white;
-  color: black;
+  background-color:#f57842;
+  color: white;
   border:none;
   font-size: x-large;
   display: flex;
@@ -993,8 +984,8 @@ border:none;
   align-items: center;
   justify-content: center;
   font-weight: bolder;
-  background-color: white;
-  color:black;
+  background-color:blue;
+  color:white;
   font-size: large;
   box-sizing: border-box;
   
@@ -1047,9 +1038,7 @@ border:none;
         height:100vh;
         border-top: 5px solid white;
         border-left: 5px solid white;
-     background-image: url(./lamborgini.jpg);
-        background-repeat: no-repeat;
-        background-size:cover;}
+     }
 
         #tasklist{color:white;
           position: absolute;
@@ -1066,7 +1055,7 @@ border:none;
              #plussign{width:8vw;
                       height: 8vh;
                       border-radius:50%;
-                      background-color:red;
+                      background-color:blue;
                       font-weight:bolder;
                       font-size: x-large;
                       }
@@ -1092,7 +1081,7 @@ border:none;
 
 
                         .popup_heading{margin-left:25%;
-                          color: #000066;
+                          color: #f57842;
                         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;} 
                           .input{margin-left: 18%;
                             margin-top:3%;
@@ -1104,7 +1093,7 @@ border:none;
                            width:6vw;
                           border:1px solid red;
                             border-radius: 10px;
-                            /*background-color: red;*/
+                            background-color: #f57842;
                             font-weight: bold;
 
                           } 
@@ -1113,7 +1102,7 @@ border:none;
                             width:6vw;
                             border:1px solid red;
                             border-radius: 10px;
-                            background-color: red;
+                            background-color: #f57842;
                             font-weight: bold;
                         }
                          #popupbox2{width: 26vw;
@@ -1127,7 +1116,7 @@ border:none;
                            
                              border: 1px solid white;} 
                           .popup2_heading{margin-left:25%;
-                          color: #000066;
+                          color: #f57842;
                           text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
                         } 
                           #input-2{margin-left: 18%;
@@ -1139,7 +1128,7 @@ border:none;
                            width:6vw;
                           border:1px solid red;
                             border-radius: 10px;
-                            background-color: red;
+                            background-color: #f57842;
                             font-weight: bold;}
                           
                              .add{margin-top: 8%;
@@ -1147,7 +1136,7 @@ border:none;
                             width:6vw;
                             border:1px solid red;
                             border-radius: 10px;
-                            background-color: red;
+                            background-color: #f57842;
                             font-weight: bold;
                         }  
 
@@ -1183,7 +1172,7 @@ border:none;
 .flex_item{min-width: 20vw;
            min-height: 30vh;
            border:1px solid black;
-          background-color: #474747;
+          background-color: white;
           color:white;
           margin-top: 2%;
           border-radius: 10px;
@@ -1210,8 +1199,8 @@ border:none;
   border-radius: 50%;
   box-sizing: border-box;
   font-weight: bolder;
-  background-color: white;
-  color: black;
+  background-color:#f57842;
+  color: white;
   border:none;
   font-size: x-large;
   display: flex;
@@ -1238,8 +1227,8 @@ border:none;
   align-items: center;
   justify-content: center;
   font-weight: bolder;
-  background-color: white;
-  color:black;
+  background-color:blue;
+  color:white;
   font-size: large;
   box-sizing: border-box;
   
@@ -1290,9 +1279,7 @@ border:none;
         height:100vh;
         border-top: 5px solid white;
         border-left: 5px solid white;
-     background-image: url(./lamborgini.jpg);
-        background-repeat: no-repeat;
-        background-size:cover;}
+}
 
         #tasklist{color:white;
           position: absolute;
@@ -1309,7 +1296,7 @@ border:none;
              #plussign{width:8vw;
                       height: 8vh;
                       border-radius:50%;
-                      background-color:red;
+                      background-color:blue;
                       font-weight:bolder;
                       font-size: x-large;
                       }
@@ -1336,7 +1323,7 @@ border:none;
 
 
                         .popup_heading{margin-left:25%;
-                          color: #000066;
+                          color: #f57842;
                         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;} 
                           .input{margin-left: 18%;
                             margin-top:3%;
@@ -1348,7 +1335,7 @@ border:none;
                            width:6vw;
                           border:1px solid red;
                             border-radius: 10px;
-                            /*background-color: red;*/
+                            background-color: #f57842;
                             font-weight: bold;
 
                           } 
@@ -1357,7 +1344,7 @@ border:none;
                             width:6vw;
                             border:1px solid red;
                             border-radius: 10px;
-                            background-color: red;
+                            background-color: #f57842;
                             font-weight: bold;
                         }
                          #popupbox2{width: 26vw;
@@ -1372,7 +1359,7 @@ border:none;
                            
                              border: 1px solid white;} 
                           .popup2_heading{margin-left:25%;
-                          color: #000066;
+                          color: #f57842;
                           text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
                         } 
                           #input-2{margin-left: 18%;
@@ -1384,7 +1371,7 @@ border:none;
                            width:6vw;
                           border:1px solid red;
                             border-radius: 10px;
-                            background-color: red;
+                            background-color: #f57842;
                             font-weight: bold;}
                           
                              .add{margin-top: 8%;
@@ -1392,7 +1379,7 @@ border:none;
                             width:6vw;
                             border:1px solid red;
                             border-radius: 10px;
-                            background-color: red;
+                            background-color: #f57842;
                             font-weight: bold;
                         }  
 
@@ -1428,7 +1415,7 @@ border:none;
 .flex_item{min-width: 20vw;
            min-height: 30vh;
            border:1px solid black;
-          background-color: #474747;
+          background-color: white;
           color:white;
           
           
@@ -1455,8 +1442,8 @@ border:none;
   border-radius: 50%;
   box-sizing: border-box;
   font-weight: bolder;
-  background-color: white;
-  color: black;
+  background-color: #f57842;
+  color: white;
   border:none;
   font-size: x-large;
   display: flex;
@@ -1483,8 +1470,8 @@ border:none;
   align-items: center;
   justify-content: center;
   font-weight: bolder;
-  background-color: white;
-  color:black;
+  background-color: blue;
+  color:white;
   font-size: large;
   box-sizing: border-box;
   
@@ -1537,9 +1524,7 @@ border:none;
         height:100vh;
         border-top: 5px solid white;
         border-left: 5px solid white;
-     background-image: url(./lamborgini.jpg);
-        background-repeat: no-repeat;
-        background-size:cover;}
+     }
 
         #tasklist{color:white;
           position: absolute;
@@ -1556,7 +1541,7 @@ border:none;
              #plussign{width:8vw;
                       height: 8vh;
                       border-radius:50%;
-                      background-color:red;
+                      background-color:blue;
                       font-weight:bolder;
                       font-size: x-large;
                       }
@@ -1583,7 +1568,7 @@ border:none;
 
 
                         .popup_heading{margin-left:25%;
-                          color: #000066;
+                          color: #f57842;
                         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;} 
                           .input{margin-left: 18%;
                             margin-top:3%;
@@ -1595,7 +1580,7 @@ border:none;
                            width:6vw;
                           border:1px solid red;
                             border-radius: 10px;
-                            /*background-color: red;*/
+                            background-color: #f57842;
                             font-weight: bold;
 
                           } 
@@ -1604,7 +1589,7 @@ border:none;
                             width:6vw;
                             border:1px solid red;
                             border-radius: 10px;
-                            background-color: red;
+                            background-color: #f57842;
                             font-weight: bold;
                         }
                          #popupbox2{width: 26vw;
@@ -1619,7 +1604,7 @@ border:none;
                            
                              border: 1px solid white;} 
                           .popup2_heading{margin-left:25%;
-                          color: #000066;
+                          color: #f57842;
                           text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
                         } 
                           #input-2{margin-left: 18%;
@@ -1631,7 +1616,7 @@ border:none;
                            width:6vw;
                           border:1px solid red;
                             border-radius: 10px;
-                            background-color: red;
+                            background-color: #f57842;
                             font-weight: bold;}
                           
                              .add{margin-top: 6%;
@@ -1639,7 +1624,7 @@ border:none;
                             width:6vw;
                             border:1px solid red;
                             border-radius: 10px;
-                            background-color: red;
+                            background-color: #f57842;
                             font-weight: bold;
                         }  
 
@@ -1675,7 +1660,7 @@ border:none;
 .flex_item{min-width: 20vw;
            min-height: 30vh;
            border:1px solid black;
-          background-color: #474747;
+          background-color: white;
           color:white;
           margin-top: 2%;
           border-radius: 10px;
@@ -1700,8 +1685,8 @@ border:none;
   border-radius: 50%;
   box-sizing: border-box;
   font-weight: bolder;
-  background-color: white;
-  color: black;
+  background-color: #f57842;
+  color: white;
   border:none;
   font-size: x-large;
   display: flex;
@@ -1728,8 +1713,8 @@ border:none;
   align-items: center;
   justify-content: center;
   font-weight: bolder;
-  background-color: white;
-  color:black;
+  background-color: blue;
+  color:white;
   font-size: large;
   box-sizing: border-box;
   

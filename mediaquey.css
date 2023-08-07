@@ -45,7 +45,7 @@
                                font-weight: bolder;
                                color: white;
                                text-decoration: none;
-                               font-size: x-small;}
+                               font-size: x-large;}
 
                               /* .addtask_heading{font-size: x-small;
                                position: absolute;
@@ -80,7 +80,7 @@
                            height:3vh;
                           border:1px solid red;
                             border-radius: 10px;
-                            background-color: blue;
+                            background-color: orange;
                            font-size: x-small;
 
                           } 
@@ -90,7 +90,7 @@
                             height: 3vh;
                             border:1px solid red;
                             border-radius: 10px;
-                            background-color: blue;
+                            background-color: orange;
                             font-size:x-small;
                         }
                          #popupbox2{width: 66vw;
@@ -245,7 +245,7 @@ border:none;
                   text-decoration: none;
                   background-color: black;
                    position: absolute;
-                   left: 25%;
+                   left: 16%;
                    top:5%;
                     font-weight: bolder;
                     font-size: x-large;
@@ -290,12 +290,12 @@ border:none;
              left:2%;
              top:12%;
              font-family: sans-serif;}
-             #plussign{width:8vw;
-                      height: 8vh;
+             #plussign{width:45px;
+                      height: 45px;
                       border-radius:50%;
                       background-color:red;
                       font-weight:bolder;
-                      font-size:large;
+                      font-size:xx-large;
                       }
 
                       #addtask{position: absolute;
@@ -304,7 +304,7 @@ border:none;
                                font-weight: bolder;
                                color: white;
                                text-decoration: none;
-                               font-size: small;}
+                               font-size: x-large;}
 
                               /* .addtask_heading{font-size: x-small;
                                position: absolute;
@@ -787,7 +787,8 @@ border:none;
         border-left: 5px solid white;
      background-image: url(./lamborgini.jpg);
         background-repeat: no-repeat;
-        background-size:cover;}
+        background-size:cover;
+        box-sizing: border-box;}
 
         #tasklist{color:white;
           position: absolute;
@@ -802,8 +803,8 @@ border:none;
              left:2%;
              top:12%;
              font-family: sans-serif;}
-             #plussign{width:8vw;
-                      height: 8vh;
+             #plussign{width:25px;
+                      height: 25px;
                       border-radius:50%;
                       background-color:red;
                       font-weight:bolder;
@@ -816,14 +817,14 @@ border:none;
                                font-weight: bolder;
                                color: white;
                                text-decoration: none;
-                               font-size: x-large;}
+                               font-size: xx-large;}
 
                               /* .addtask_heading{font-size: x-small;
                                position: absolute;
                                right: 10%;
                                top:5%;}*/
                                #popupbox{width: 45vw;
-                             height:15vh;
+                             height:14vh;
                            
                             
                              position: fixed;
@@ -837,17 +838,18 @@ border:none;
                              
 
 
-                        .popup_heading{margin-left:29%;
+                        .popup_heading{margin-left:22%;
                         	margin-top: 2%;
                           color: #000066;
+                          font-size: xx-large;
                         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;} 
                           .input{margin-left: 24%;
-                            margin-top:10%;
+                            margin-top:6%;
                             width: 45vw;
                             text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
                           } 
                          
-                        .close{margin-top: 8%;
+                        .close{margin-top: 5%;
                             margin-left: 12%;
                           width: 15vw;
                            height:3vh;
@@ -857,7 +859,7 @@ border:none;
                            font-size:large;
 
                           } 
-                             .add{margin-top: 8%;
+                             .add{margin-top: 5%;
                             margin-left: 12%;
                             width:15vw;
                             height: 3vh;

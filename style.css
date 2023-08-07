@@ -240,7 +240,7 @@ border:none;
 }
 */
   .linethrough{text-decoration: line-through;
-                color:white;
+                color:black;
                 text-decoration-style: wavy;
                 text-decoration-color:red;}
   

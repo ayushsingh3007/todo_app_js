@@ -5,10 +5,12 @@ let backbutton = document.getElementById("back_button");
 let Noitem = document.getElementById("noitem");
 const parent = document.getElementById("flex_container");
 const hide_container = document.getElementById("hide_container");
+const addtask=document.getElementById("addtask")
 let Card_id = 0;
 let centeredDiv = null;
 let currentTaskDiv = null;
-backbutton.classList.add("hide")
+let previouslyCenteredDiv = null; // To store the initially centered card
+backbutton.classList.add("hide");
 
 let popvisible = false;
 function popupcomes() {
@@ -41,31 +43,33 @@ function closebutton2() {
 }
 
 function handleAddButtonClick() {
-  let input2 = document.getElementById("input-2");
-  let donebutton = document.createElement("button");
-  let newListItemText = document.createElement("h4");
+  if (centeredDiv) {
+    let input2 = document.getElementById("input-2");
+    let donebutton = document.createElement("button");
+    let newListItemText = document.createElement("h4");
 
-  donebutton.innerText = "done";
-  donebutton.classList.add("done");
-  donebutton.style.marginLeft = "40%";
-  donebutton.style.marginTop = "0%";
-  donebutton.addEventListener("click", function () {
-    newListItemText.classList.add("linethrough");
-    donebutton.classList.add("hide");
-  });
+    donebutton.innerText = "done";
+    donebutton.classList.add("done");
+    donebutton.style.marginLeft = "40%";
+    donebutton.style.marginTop = "0%";
+    donebutton.addEventListener("click", function () {
+      newListItemText.classList.add("linethrough");
+      donebutton.classList.add("hide");
+    });
 
-  newListItemText.style.textAlign = "center";
-  newListItemText.style.color="black";
-  newListItemText.style.marginTop = "4%";
-  newListItemText.style.fontStyle="italic"
-  currentTaskDiv.appendChild(newListItemText);
-  currentTaskDiv.appendChild(donebutton);
+    newListItemText.style.textAlign = "center";
+    newListItemText.style.color = "black";
+    newListItemText.style.marginTop = "4%";
+    newListItemText.style.fontStyle = "italic";
+    currentTaskDiv.appendChild(newListItemText);
+    currentTaskDiv.appendChild(donebutton);
 
-  newListItemText.classList.add("itemlists");
-  newListItemText.innerText = input2.value;
-  popupbox2.classList.add("hide");
-  input2.value = "";
-  popup2comes = false;
+    newListItemText.classList.add("itemlists");
+    newListItemText.innerText = input2.value;
+    popupbox2.classList.add("hide");
+    input2.value = "";
+    popup2comes = false;
+  }
 }
 
 function addbutton() {
@@ -136,6 +140,7 @@ function addbutton() {
 
   if (centeredDiv) {
     hide_container.appendChild(newdiv);
+    newdiv.classList.add("hide")
   } else {
     parent.appendChild(newdiv);
   }
@@ -165,12 +170,9 @@ function hideOtherDivs(clickedDiv) {
         div.style.display = "block";
         div.classList.remove("hide_container");
         centeredDiv = null;
-      } 
-
-      else {
+      } else {
         div.style.display = "block";
         div.classList.add("hide_container");
-        
         centeredDiv = div;
       }
     }
@@ -194,10 +196,12 @@ function showAllDivs() {
   });
   tasks.classList.remove("hide");
   backbutton.classList.add("hide");
+
+  centeredDiv = previouslyCenteredDiv; // Set the centeredDiv to the previously
+
 }
 
 function reverse() {
-
   showAllDivs();
   const hiddenContainers = Array.from(document.getElementsByClassName("hide_container"));
   hiddenContainers.forEach((container) => {
@@ -206,16 +210,38 @@ function reverse() {
   });
 
   if (currentTaskDiv) {
+    previouslyCenteredDiv = centeredDiv; // Update the previouslyCenteredDiv to the currently centered card
     centeredDiv = currentTaskDiv;
   } else {
-    centeredDiv = null;
+    centeredDiv = previouslyCenteredDiv; // Restore the previously centered card
   }
 
-  // Get all the cards in the hide_container
   const hiddenCards = Array.from(document.getElementsByClassName("hide_container")[0].children);
-
-  // Append the hidden cards to the flex_container
   hiddenCards.forEach((card) => {
     parent.appendChild(card);
   });
 }
+
+// Add a listener to the back button
+backbutton.addEventListener("click", () => {
+  if (!previouslyCenteredDiv) {
+    // Store the initially centered card if it hasn't been stored yet
+    previouslyCenteredDiv = centeredDiv;
+  }
+  reverse();
+});
+
+// Function to delete a task from a card
+function deleteTask(taskDiv) {
+  taskDiv.parentNode.removeChild(taskDiv);
+}
+
+// Add an event listener for the "Delete" button of each task
+document.addEventListener("click", (event) => {
+  if (event.target.classList.contains("delete")) {
+    deleteTask(event.target.parentNode);
+  }
+});
+
+// Add an event listener for the "Add Card" button
+document.getElementById("button_1").addEventListener("click", addbutton);

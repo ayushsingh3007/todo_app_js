@@ -55,6 +55,7 @@ function handleAddButtonClick() {
   });
 
   newListItemText.style.textAlign = "center";
+  newListItemText.style.color="black";
   newListItemText.style.marginTop = "4%";
   newListItemText.style.fontStyle="italic"
   currentTaskDiv.appendChild(newListItemText);

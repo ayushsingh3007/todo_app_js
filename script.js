@@ -96,7 +96,7 @@ function addbutton() {
   title.innerText = inputvalue;
   title.style.textAlign = "center";
 
-  title.style.color = "white";
+  title.style.color = "#FFB7B2";
   blurpage.style.filter = "blur(0px)";
   addbutton.innerText = "+";
   deletebutton.innerText = "x";
